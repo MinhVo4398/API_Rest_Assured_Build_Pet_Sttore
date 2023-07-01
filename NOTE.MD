@@ -8,3 +8,9 @@ I) Library Used: depenpencies
 6) testng
 7) allure-testng
 8) maven surfire plugin
+
+II) Report - local
+
++ mvn clean test -Dtest=ScenarioPetInfo
++ allure serve target/surefire-reports
+  ![img.png](img.png)
