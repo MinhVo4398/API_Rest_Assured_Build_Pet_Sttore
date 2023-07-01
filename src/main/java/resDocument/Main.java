@@ -1,9 +1,9 @@
 package resDocument;
 
-import org.class_automation.petstore.validation.Pet.InfoPetId;
+import org.class_automation.petstore.validation.Pet.InfoPet;
 
 public class Main {
-    private static InfoPetId infoPetId = new InfoPetId();
+    private static InfoPet infoPetId = new InfoPet();
 
     public static void main(String[] args) {
         infoPetId.getPetId();

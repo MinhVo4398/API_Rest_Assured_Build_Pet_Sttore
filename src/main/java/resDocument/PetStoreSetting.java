@@ -1,5 +1,7 @@
 package resDocument;
 
+import org.class_automation.petstore.validation.Pet.InfoPet;
+
 public class PetStoreSetting {
 
     public static final String hostDomain = "https://petstore.swagger.io/v2";
@@ -7,6 +9,7 @@ public class PetStoreSetting {
     // Endpoint environment
 
     // Pet
+    private InfoPet infoPet = new InfoPet();
     public static final String uploadImage = "/pet/{petId}/uploadImage";
     public static final String pet = "/pet";
     public static final String findByStatus = "/pet/findByStatus";
