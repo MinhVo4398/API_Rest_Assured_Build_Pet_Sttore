@@ -1,0 +1,10 @@
+I) Library Used: depenpencies
+1 )  rest assured
+
+2) json -path
+3) xml-path
+4) gson
+5) junit-jupiter
+6) testng
+7) allure-testng
+8) maven surfire plugin
