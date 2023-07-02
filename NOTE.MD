@@ -12,5 +12,7 @@ I) Library Used: depenpencies
 II) Report - local
 
 + mvn clean test -Dtest=ScenarioPetInfo
++ mvn clean test -Dtest=ScenarioPet
 + allure serve target/surefire-reports
   ![img.png](img.png)
++ ![img_1.png](img_1.png)
