@@ -113,4 +113,34 @@ public class InfoPet {
         return statusCode;
     }
 
+    public long getPetId1() {
+        Response response = given()
+                .header("accept", "application/json")
+                .contentType("application/json")
+                .body("{\n" +
+                        "  \"id\": 0,\n" +
+                        "  \"category\": {\n" +
+                        "    \"id\": 0,\n" +
+                        "    \"name\": \"string\"\n" +
+                        "  },\n" +
+                        "  \"name\": \"doggie\",\n" +
+                        "  \"photoUrls\": [\n" +
+                        "    \"string\"\n" +
+                        "  ],\n" +
+                        "  \"tags\": [\n" +
+                        "    {\n" +
+                        "      \"id\": 0,\n" +
+                        "      \"name\": \"string\"\n" +
+                        "    }\n" +
+                        "  ],\n" +
+                        "  \"status\": \"available\"\n" +
+                        "}")
+                .post(petStoreSetting.hostDomain + petStoreSetting.pet);
+
+
+        long id = response.then().extract().jsonPath().getJsonObject("id");
+        System.out.println(id);
+        return id;
+    }
+
 }
